@@ -1,165 +1,162 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Personal Page</title>
-<style>
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #eee;
-    min-height: 100vh;
-    padding: 50px 20px;
-    filter: blur(6px);
-    transition: filter 0.6s ease;
-    user-select: none;
-    cursor: pointer;
-  }
-  body.unblurred {
-    filter: none;
-    user-select: auto;
-    cursor: default;
-  }
+  <meta charset="UTF-8" />
+  <title>Welcome to My 90s Homepage</title>
+  <style>
+    body {
+      background-color: #f5f5ff;
+      color: #333366;
+      font-family: "Times New Roman", Georgia, serif;
+      margin: 0;
+      padding: 0;
+    }
 
-  .profile-pic {
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    border: 4px solid #1db954;
-    object-fit: cover;
-    box-shadow: 0 0 15px #1db954aa;
-    margin-bottom: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .container {
+      width: 780px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      border: 2px solid #9999cc;
+      padding: 20px;
+      position: relative;
+      min-height: 600px;
+    }
 
-  h1 {
-    font-size: 3rem;
-    margin: 0 0 10px;
-    text-align: center;
-    text-shadow: 0 0 10px #1db954aa;
-    opacity: 1;
-  }
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      color: #444488;
+      border-bottom: 3px double #9999cc;
+      margin-bottom: 20px;
+    }
 
-  p.description {
-    font-size: 1.25rem;
-    font-style: italic;
-    color: #a0cfc2dd;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    text-align: center;
-  }
+    .nav {
+      background-color: #ddddee;
+      border: 1px solid #aaaacc;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-  .projects {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+    .nav a {
+      margin: 0 15px;
+      color: #000066;
+      text-decoration: none;
+    }
 
-  .projects h2 {
-    font-size: 2rem;
-    border-bottom: 3px solid #1db954;
-    padding-bottom: 8px;
-    margin-bottom: 25px;
-    text-shadow: 0 0 6px #1db954aa;
-    text-align: center;
-  }
+    .nav a:hover {
+      text-decoration: underline;
+    }
 
-  .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
-  }
+    .content {
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-  .project-card {
-    background: #203a43cc;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 0 12px #1db95455;
-    transition: background-color 0.5s ease;
-    cursor: pointer;
-  }
+    .box {
+      background-color: #f0f0ff;
+      border: 1px solid #ccccff;
+      padding: 10px;
+      margin-top: 20px;
+    }
 
-  .project-card:hover {
-    background-color: #1db954cc;
-    color: #121212;
-  }
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #666688;
+      border-top: 1px dotted #aaaacc;
+      margin-top: 30px;
+      padding-top: 10px;
+    }
 
-  .project-card a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.3rem;
-  }
+    .button-container {
+      position: absolute;
+      bottom: 35px;
+      left: 7px;
+    }
 
-  .project-desc {
-    margin-top: 8px;
-    font-weight: 400;
-    color: #b8d6cccc;
-    transition: color 0.5s ease;
-  }
+    .audio-button-container {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
 
-  .project-card:hover .project-desc {
-    color: #121212cc;
-  }
-</style>
+    .audio-button {
+      padding: 4px 10px;
+      font-size: 14px;
+      font-family: Georgia, serif;
+      background-color: #ddddee;
+      border: 1px solid #aaaacc;
+      cursor: pointer;
+    }
+
+    .audio-button:hover {
+      background-color: #ccccdd;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Welcome Human!</h1>
 
-  <img
-    class="profile-pic"
-    src="https://i.pinimg.com/736x/ee/48/39/ee483967a19689de9fb8788245353e51.jpg"
-    alt="Profile Picture"
-  />
+    <div class="nav">
+    
 
-  <h1>greek</h1>
-  <p class="description">i like words</p>
+    <div class="content">
+      <p>Hello! Thanks for visiting my little webpage of the github.</p>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <a href="https://greekstars.github.io/e621-gen/" target="_blank" rel="noopener noreferrer">e621 gen</a>
-        <p class="project-desc">generates e621 content using discords webhook API</p>
+      <p>I plan on hosting this page onto namecheap or porkbun, or something like that soon when i save up enough!</p>
+      
+      <p> The little button advertisement isn't mine, but my best friends webpage on roblox cheats! You should check it out, its really cool. <p>
+
+      <div class="box">
+        <p><strong>About Me:</strong></p>
+        <p>I go by many aliases throughout the internet, i most commonly go by the four mixed digits of 'mpxi', and I built this website out of complete boredom! In the future i could maybe post a few fun downloads if I figure it out.</p>
       </div>
-      <div class="project-card">
-        <a href="https://greekstars.github.io/Penguin-Webhook-Nuker/" target="_blank" rel="noopener noreferrer">penguin webhook nuker</a>
-        <p class="project-desc">nukes webhooks, i dont mean to hurt nobody.</p>
-      </div>
-      <div class="project-card">
-        <a href="https://greekstars.github.io/personalpage/" target="_blank" rel="noopener noreferrer">literally this exact page</a>
-        <p class="project-desc">lalalalalalala</p>
+
+      <div class="box">
+        <p><strong>What’s New?</strong></p>
+        <ul>
+          <li>June 16 2025: This page is being lauched on github sites!</li>
+          <li>Coming soon: a few downloads on some studies im interested in.</li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <audio id="background-audio" loop>
-    <source src="https://files.catbox.moe/xm5o00.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
+    <div class="footer">
+      Join my friend's <a href="https://discord.gg/9BttAc6PEd">Discord Server!</a>
+    </div>
 
-<script>
-  const body = document.body;
-  const audio = document.getElementById('background-audio');
-  let started = false;
+    <!-- 88x31 Button (Bottom Left) -->
+    <div class="button-container">
+      <a href="https://getsteel.cc" target="_blank" rel="noopener noreferrer">
+        <img src="https://cyber.dabamos.de/88x31/video_game_cheats_tips_hints_codes.gif" alt="88x31 Button" width="88" height="33" />
+      </a>
+    </div>
 
-  function startMusicAndUnblur() {
-    if (started) return;
-    started = true;
-    audio.play().catch(e => {
-      console.warn('Audio play failed:', e);
-    });
-    audio.volume = 0.5;
-    body.classList.add('unblurred');
-    body.style.cursor = 'default';
-    body.removeEventListener('click', startMusicAndUnblur);
-  }
+    <!-- Audio Toggle Button (Bottom Right) -->
+    <div class="audio-button-container">
+      <button class="audio-button" onclick="toggleAudio()">heres some tunes!</button>
+    </div>
 
-  // Play music and remove blur on first click anywhere
-  body.addEventListener('click', startMusicAndUnblur);
-</script>
+    <!-- Audio Element -->
+    <audio id="bgMusic" src="https://files.catbox.moe/x8t9wc.mp3"></audio>
+  </div>
 
+  <script>
+    const audio = document.getElementById('bgMusic');
+    const btn = document.querySelector('.audio-button');
+
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = 'stop your tunes here';
+      } else {
+        audio.pause();
+        btn.textContent = 'heres some tunes!';
+      }
+    }
+  </script>
 </body>
 </html>
