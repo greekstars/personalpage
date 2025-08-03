@@ -20,11 +20,22 @@
     outline: none;
     font-family: monospace, monospace;
   }
+  #enter-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-family: monospace, monospace;
+  }
+  #enter-btn:hover {
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
   <label>USERNAME : <input id="username" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></label>
   <label>PASSWORD : <input id="password" type="password" autocomplete="off"></label>
+  
+  <div id="enter-btn">[   ENTER   ]</div>
 
   <script type="module" src="main.js"></script>
 </body>
