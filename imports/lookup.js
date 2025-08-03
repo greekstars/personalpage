@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       if (!data.success) {
         document.getElementById("output").textContent = "Error: Unable to retrieve IP information.";
-        return;
+        return; 
       }
 
       const fields = [
