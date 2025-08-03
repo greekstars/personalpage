@@ -1,12 +1,13 @@
-fetch("https://ipwho.is/")
-  .then(res => res.json())
-  .then(data => {
-    if (!data.success) {
-      document.getElementById("output").textContent = "Error: Unable to retrieve IP information.";
-      return;
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("https://ipwho.is/")
+    .then(res => res.json())
+    .then(data => {
+      if (!data.success) {
+        document.getElementById("output").textContent = "Error: Unable to retrieve IP information.";
+        return;
+      }
 
-    const output = `
+      const output = `
 | IP Address            : ${data.ip || "N/A"}
 | City                  : ${data.city || "N/A"}
 | Region                : ${data.region || "N/A"}
@@ -55,10 +56,10 @@ fetch("https://ipwho.is/")
 | Screen Size           : ${screen.width && screen.height ? screen.width + "x" + screen.height : "N/A"}
 `;
 
-
-    document.getElementById("output").textContent = output.trim();
-  })
-  .catch(error => {
-    document.getElementById("output").textContent = "Error loading IP information.";
-    console.error(error);
-  });
+      document.getElementById("output").textContent = output.trim();
+    })
+    .catch(error => {
+      document.getElementById("output").textContent = "Error loading IP information.";
+      console.error(error);
+    });
+});
