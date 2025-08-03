@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
   fetch("https://ipwho.is/")
     .then(res => res.json())
     .then(data => {
